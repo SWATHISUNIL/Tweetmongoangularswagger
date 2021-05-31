@@ -1,0 +1,77 @@
+<!-- <div class="bg-img">
+<div class="container" style="padding-top:60px;">  
+    <div class="row">  
+      <div class="col-md-6 mx-auto">  
+        <div class="card-group">  
+          <div class="card p-4">  
+            <div class="card-body">  
+              <form name="form" (ngSubmit)="login()" #f="ngForm">   
+                <h1 style="text-align:center">Login</h1>  
+                 
+                <div class="input-group mb-3">  
+                  <div class="input-group-prepend">  
+                    <span class="input-group-text"><i class="icon-user"></i></span>  
+                  </div>  
+                  <input type="text" name="UserName" [(ngModel)]="model.EmailId" class="form-control sty1" placeholder="Email" required>  
+                </div>  
+                <div class="input-group mb-4">  
+                  <div class="input-group-prepend">  
+                    <span class="input-group-text"><i class="icon-lock"></i></span>  
+                </div>  
+                <input  type="password" name="Passward" [(ngModel)]="model.Password" class="form-control"  
+               placeholder="Password">  
+              </div>  
+              <div>  
+                  <p style="color:#E92626;font-size:20px;font-weight:normal" Class="success" align="left">  
+                    {{errorMessage}}  
+                  </p>  
+                </div>  
+              <div class="row">  
+                <div class="col-6">  
+                  <button type="submit" class="btn btn-primary px-4">Login</button>  
+                </div>  
+                <div class="col-6 text-right">  
+                  <button type="button" class="btn btn-link px-0">Forgot password?</button>  
+                </div>  
+              </div>  
+                
+            </form>  
+          </div>  
+        </div>  
+      </div>  
+    </div>  
+  </div>  
+</div>  
+</div> -->
+
+
+<!-- //nre code  -->
+
+<div class="bg-img">
+<mat-card class="example-card" [style.width.px]=500>
+  <mat-card-header>
+    <mat-card-title style="position: relative; margin-left: 5rem;">Login</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form class="example-form">
+      <table class="example-full-width" cellspacing="1">
+        <tr>
+          <td>
+            <mat-form-field [style.width.px]=300>
+            <input matInput placeholder="Username" [(ngModel)]="model.EmailId" name="UserName" required>
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+        <td><mat-form-field class="example-full-width" [style.width.px]=300>
+          <input matInput placeholder="Password" [(ngModel)]="model.Password"type="password" name="password" required>
+        </mat-form-field></td>
+      </tr></table>
+    </form>
+    
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button (click)="login()" color="primary">Login</button>
+  </mat-card-actions>
+</mat-card>
+</div>

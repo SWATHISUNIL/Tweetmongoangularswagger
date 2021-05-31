@@ -1,0 +1,22 @@
+<!-- <div class="row" >
+    <div class="span well" style="padding-bottom:0" >
+        <div class="form-group" align="center">
+            <textarea class="form-control " rows="5" maxlength="144" id="tweetMsg"  [(ngModel)]="UserForm.tweetMsg" ></textarea>
+            </div>            
+        <a class="btn btn-success pull-right" type="submit" (click)="onFormSubmit()"><b>Post Tweet</b></a>
+    </div>
+</div> -->
+<div class="bg-img">
+<br>
+<mat-card class="example-card" [style.width.px]=500>
+<div class="row" >
+    <div class="span well" style="padding-bottom:50" >
+        <div class="form-group" align="center">
+            <textarea class="form-control " rows="15" maxlength="200" id="tweetMsg"  [(ngModel)]="TweetContent.tweetMsg" #tweetData></textarea>
+            </div>            
+       <br>
+        <mat-card-actions>
+            <button mat-raised-button (click)="onFormSubmit()" type="submit" color="primary">Post Tweet</button>
+          </mat-card-actions>
+    </div></div>
+</mat-card></div>

@@ -1,0 +1,62 @@
+<div class="bg-img">
+<div class="content" >
+    <div fxLayout="row wrap" fxLayoutGap="20px grid">
+      <div fxFlex="30%" fxFlex.xs="100%" fxFlex.sm="33%">
+        <mat-card class="example-card"fxFlex="calc(33%-25px)" fxFlex.sm="calc(50%-25px)" >
+          <mat-card-header>
+            <mat-card-title>Add Tweet</mat-card-title>
+          </mat-card-header>
+          <img class="imgs" mat-card-image src="https://imgur.com/8Va0g2k.jpeg">
+          <mat-card-content>
+            <p>
+              Provision to tweet a message.
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button (click)="addtweet()">Click</button>
+           
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    
+    
+        <div fxFlex="30%" fxFlex.xs="100%" fxFlex.sm="33%">
+          <mat-card class="example-card" fxFlex="40%" fxFlex="calc(33%-50px)" fxFlex.sm="calc(50%-25px)" >
+            <mat-card-header>
+              <mat-card-title>View All Tweets</mat-card-title>
+            </mat-card-header>
+            <img class="imgs"mat-card-image src="https://imgur.com/dRstcwr.jpeg">
+            <mat-card-content>
+              <p>
+               Provision to see the tweets.
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+               <button mat-button (click)="ViewAllTweets()">View All Tweets</button>
+              
+             
+            </mat-card-actions>
+          </mat-card>
+        </div>
+     
+      
+        <div fxFlex="30%" fxFlex.xs="100%" fxFlex.sm="33%">
+          <mat-card class="example-card" fxFlex="calc(25%-10px)" fxFlex.sm="calc(30%-10px)" >
+            <mat-card-header>
+              <mat-card-title>View all Users</mat-card-title>
+            </mat-card-header>
+            <img class="imgs" mat-card-image src="https://imgur.com/cOGMtau.jpeg">
+            <mat-card-content>
+              <p>
+                provision to view all tweets by user.
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button (click)="ViewAllUsers()">View All Users</button>
+             
+            </mat-card-actions>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+</div>

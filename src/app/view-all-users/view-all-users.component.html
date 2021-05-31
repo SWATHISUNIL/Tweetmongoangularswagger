@@ -1,0 +1,41 @@
+<!-- <div class="bg-img">
+<div class="row  card-columns">
+    <div class="col-sm-3 mx-auto" *ngFor="let user of repos">
+        <div class="container">
+            <div class="example-card"   >
+                
+                    <h4 class="card-title">{{user.firstName+" "+user.lastName}}</h4>
+                    <span style="font-size: medium;">(&nbsp;{{user.email}}&nbsp;)</span>
+                    <br/>
+                    <br/>
+                    <a routerLink="/ViewAllTweetsByUser/{{user.userId}}" class="btn btn-grad mx-auto text-light">View Tweets</a>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div> -->
+<div class="bg-img">
+<div class="content">
+    <div fxLayout="row wrap" fxLayoutGap="16px grid">
+      <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let user of repos">
+        <mat-card class="mat-elevation-z4" style="background-color: rgb(137, 191, 241);">
+          <mat-card-header>
+            <mat-card-title>{{user.firstName+" "+user.lastName}}</mat-card-title>
+          </mat-card-header>
+          <!-- <img mat-card-image src="./../assets/images/mountains.jpg"> -->
+          <mat-card-content>
+            <p>
+                (&nbsp;{{user.email}}&nbsp;)
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <a routerLink="/ViewAllTweetsByUser/{{user.userId}}" class="btn btn-grad mx-auto text-light">View Tweets</a>
+            
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+    </div>
+</div>
+  
+    

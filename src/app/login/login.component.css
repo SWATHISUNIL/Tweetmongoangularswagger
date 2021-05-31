@@ -1,0 +1,43 @@
+.bg-img
+{
+    /* background-color: #b3fff0; */
+    background: #d6d6f5;
+    background: url('https://i.imgur.com/kYCFjKy.jpg'); 
+    min-height: 100%;
+    min-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+    /* .container{
+        background-image: url(..\Downloads\download);
+    } */
+    .example-card {
+        min-width: 20rem;
+        min-height: 100%;
+        margin-bottom: 100px;
+        margin-left: 5rem;
+        float: left;
+        margin-top: 5rem;
+         margin-bottom: 10rem;
+        margin-right: 5rem; 
+        justify-content: center;  
+         text-align: center;
+         align-items: center;    
+        /* margin-left:5rem;
+        justify-content: center;
+        display: inline;  */
+        /* align-items: center;  */
+        background: hsla(198, 33%, 94%, 0.801);
+        /* background: url("https://i.imgur.com/DeQK8xz.jpg"); */
+        
+    }
+    .example-form{
+        text-align: center;
+        margin-left: 5rem;
+
+    }
